@@ -1,0 +1,33 @@
+ORICA_FINAL_V1.0
+================
+
+Production path:
+  orica/core.py
+  orica/controllers.py
+  orica/api.py
+  orica/diagnostics.py
+
+Experimental research controller:
+  orica/experimental/adaptive_v43.py
+
+Tests:
+  orica/tests/test_core.py
+  orica/tests/test_production_api.py
+
+Convenience files:
+  orica_full_algorithm.py       self-contained production implementation
+  system_integration_example.py integration wrapper/example
+  README.md
+  requirements.txt
+  pytest.ini
+
+Production controller:
+  CoolingController(lambda0=0.995, gamma=0.60)
+
+Validation status of packaged code:
+  pytest: 7 passed
+  V4.3 boost-disabled regression: exact equality with Cooling in M/W/Rn/B
+
+Note:
+  GeneralSelfTuningControllerV43 is retained for research only and is not
+  selected by create_final_orica().
